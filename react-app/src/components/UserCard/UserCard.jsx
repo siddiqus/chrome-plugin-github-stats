@@ -1,20 +1,14 @@
 import { Card, ListGroup, ListGroupItem, Table } from "react-bootstrap";
-import { getMonthsBetween } from "../../services/utils";
-import { mockData } from "./data";
 
-export function UserCard({ startDate, endDate }) {
-  const userData = mockData;
-  const months = getMonthsBetween(startDate, endDate);
-  console.log(months);
-
+export function UserCard({ months, userData }) {
   return (
-    <Card style={{ padding: "1em" }}>
+    <Card style={{ padding: "1em", marginBottom: '1em' }}>
       <Table borderless>
         <thead>
           <tr>
             <th>{userData.username}</th>
             {months.map((month, index) => (
-              <th index={`month-${index}`}>{month}</th>
+              <th key={index} index={`month-${index}`}>{month}</th>
             ))}
           </tr>
         </thead>
@@ -28,9 +22,7 @@ export function UserCard({ startDate, endDate }) {
                 <ListGroupItem>
                   PR Comments Avg ({userData.averageCommentsPerPr})
                 </ListGroupItem>
-                <ListGroupItem>
-                  PR Comments (max)
-                </ListGroupItem>
+                <ListGroupItem>PR Comments (max)</ListGroupItem>
               </ListGroup>
             </td>
 

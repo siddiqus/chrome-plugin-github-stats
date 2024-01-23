@@ -2,6 +2,9 @@ import { Container } from "react-bootstrap";
 import UserPicker from "./components/UserPicker/UserPicker";
 import { useState } from "react";
 import { UserCard } from "./components/UserCard/UserCard";
+import UserPrChart from "./components/UserPRChart/UserPrChart";
+import { getMonthsBetween } from "./services/utils";
+import { mockData, mockData2 } from "./components/UserCard/data";
 
 function App() {
   const [data, setData] = useState({});
@@ -10,6 +13,11 @@ function App() {
     setData({ startDate, endDate, usernames });
   }
 
+  const months = getMonthsBetween(
+    data.startDate || new Date(),
+    data.endDate || new Date()
+  );
+
   return (
     <Container>
       <br />
@@ -17,8 +25,25 @@ function App() {
       <hr />
       <UserPicker onSubmit={onSubmit} />
       <hr />
-      {data ? (
-        <UserCard startDate={data.startDate} endDate={data.endDate}></UserCard>
+      {data.startDate ? (
+        <UserPrChart
+          months={months}
+          userDataList={[mockData, mockData2]}
+        ></UserPrChart>
+      ) : (
+        <></>
+      )}
+
+      {data.startDate ? (
+        [mockData, mockData2].map((d, index) => {
+          return (
+            <UserCard
+              key={`data-${index}`}
+              userData={d}
+              months={months}
+            ></UserCard>
+          );
+        })
       ) : (
         <></>
       )}
