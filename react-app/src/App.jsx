@@ -4,19 +4,45 @@ import { useState } from "react";
 import { UserCard } from "./components/UserCard/UserCard";
 import UserPrChart from "./components/UserPRChart/UserPrChart";
 import { getMonthsBetween } from "./services/utils";
-import { mockData, mockData2 } from "./components/UserCard/data";
+import { getUserData } from "./services/github.service";
+
+const statusMap = {
+  LOADING: "loading",
+  NO_DATA: "no-data",
+  LOADED: "loaded",
+  ERROR: "error",
+};
 
 function App() {
-  const [data, setData] = useState({});
+  const [dataStatus, setDataStatus] = useState(statusMap.NO_DATA);
 
-  function onSubmit({ startDate, endDate, usernames }) {
-    setData({ startDate, endDate, usernames });
+  const [months, setMonths] = useState([]);
+  const [userDataList, setUserDataList] = useState([]);
+
+  async function onSubmit({ startDate, endDate, usernames }) {
+    const months = getMonthsBetween(
+      startDate || new Date(),
+      endDate || new Date()
+    );
+    setMonths(months);
+
+    setDataStatus(statusMap.LOADING);
+
+    const data = await Promise.all(
+      usernames.map((u) =>
+        getUserData({
+          author: u,
+          startDate,
+          endDate,
+        })
+      )
+    );
+    setUserDataList(data);
+    setDataStatus(statusMap.LOADED);
   }
 
-  const months = getMonthsBetween(
-    data.startDate || new Date(),
-    data.endDate || new Date()
-  );
+  const isLoaded = dataStatus === statusMap.LOADED;
+  const isLoading = dataStatus === statusMap.LOADING;
 
   return (
     <Container>
@@ -25,17 +51,17 @@ function App() {
       <hr />
       <UserPicker onSubmit={onSubmit} />
       <hr />
-      {data.startDate ? (
-        <UserPrChart
-          months={months}
-          userDataList={[mockData, mockData2]}
-        ></UserPrChart>
+
+      <h4>{isLoading ? "Loading..." : <></>}</h4>
+
+      {isLoaded ? (
+        <UserPrChart months={months} userDataList={userDataList}></UserPrChart>
       ) : (
         <></>
       )}
 
-      {data.startDate ? (
-        [mockData, mockData2].map((d, index) => {
+      {isLoaded ? (
+        userDataList.map((d, index) => {
           return (
             <UserCard
               key={`data-${index}`}
