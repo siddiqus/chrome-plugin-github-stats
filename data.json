@@ -1,0 +1,1482 @@
+{
+    "rapidViewId": 1229,
+    "statistics": {
+        "fieldConfigured": false,
+        "typeId": "none",
+        "id": "",
+        "name": "None"
+    },
+    "entityData": {
+        "statuses": {
+            "3": {
+                "statusUrl": "https://jira.sso.episerver.net/images/icons/statuses/inprogress.png",
+                "statusName": "In Progress",
+                "status": {
+                    "id": "3",
+                    "name": "In Progress",
+                    "description": "This issue is being actively worked on at the moment by the assignee.",
+                    "iconUrl": "https://jira.sso.episerver.net/images/icons/statuses/inprogress.png",
+                    "statusCategory": {
+                        "id": "4",
+                        "key": "indeterminate",
+                        "colorName": "inprogress"
+                    }
+                }
+            },
+            "10011": {
+                "statusUrl": "https://jira.sso.episerver.net/images/icons/statuses/open.png",
+                "statusName": "To Do",
+                "status": {
+                    "id": "10011",
+                    "name": "To Do",
+                    "description": "",
+                    "iconUrl": "https://jira.sso.episerver.net/images/icons/statuses/open.png",
+                    "statusCategory": {
+                        "id": "2",
+                        "key": "new",
+                        "colorName": "default"
+                    }
+                }
+            },
+            "10013": {
+                "statusUrl": "https://jira.sso.episerver.net/images/icons/statuses/closed.png",
+                "statusName": "Done",
+                "status": {
+                    "id": "10013",
+                    "name": "Done",
+                    "description": "",
+                    "iconUrl": "https://jira.sso.episerver.net/images/icons/statuses/closed.png",
+                    "statusCategory": {
+                        "id": "3",
+                        "key": "done",
+                        "colorName": "success"
+                    }
+                }
+            },
+            "11306": {
+                "statusUrl": "https://jira.sso.episerver.net/images/icons/statuses/generic.png",
+                "statusName": "Code Review",
+                "status": {
+                    "id": "11306",
+                    "name": "Code Review",
+                    "description": "",
+                    "iconUrl": "https://jira.sso.episerver.net/images/icons/statuses/generic.png",
+                    "statusCategory": {
+                        "id": "4",
+                        "key": "indeterminate",
+                        "colorName": "inprogress"
+                    }
+                }
+            },
+            "11802": {
+                "statusUrl": "https://jira.sso.episerver.net/images/icons/statuses/generic.png",
+                "statusName": "Won't Fix",
+                "status": {
+                    "id": "11802",
+                    "name": "Won't Fix",
+                    "description": "",
+                    "iconUrl": "https://jira.sso.episerver.net/images/icons/statuses/generic.png",
+                    "statusCategory": {
+                        "id": "3",
+                        "key": "done",
+                        "colorName": "success"
+                    }
+                }
+            },
+            "11804": {
+                "statusUrl": "https://jira.sso.episerver.net/images/icons/subtask.gif",
+                "statusName": "Product Review",
+                "status": {
+                    "id": "11804",
+                    "name": "Product Review",
+                    "description": "This status is managed internally by JIRA Software",
+                    "iconUrl": "https://jira.sso.episerver.net/images/icons/subtask.gif",
+                    "statusCategory": {
+                        "id": "4",
+                        "key": "indeterminate",
+                        "colorName": "inprogress"
+                    }
+                }
+            }
+        },
+        "priorities": {
+            "10600": {
+                "priorityName": "Level 4 – Normal",
+                "priorityUrl": "https://jira.sso.episerver.net/images/icons/priorities/minor.svg"
+            },
+            "10603": {
+                "priorityName": "Level 3 – Important",
+                "priorityUrl": "https://jira.sso.episerver.net/images/icons/priorities/major.svg"
+            }
+        },
+        "types": {
+            "1": {
+                "typeUrl": "https://jira.sso.episerver.net/secure/viewavatar?size=xsmall&avatarId=10303&avatarType=issuetype",
+                "typeName": "Bug"
+            },
+            "3": {
+                "typeUrl": "https://jira.sso.episerver.net/secure/viewavatar?size=xsmall&avatarId=10318&avatarType=issuetype",
+                "typeName": "Task"
+            },
+            "10000": {
+                "typeUrl": "https://jira.sso.episerver.net/secure/viewavatar?size=xsmall&avatarId=10307&avatarType=issuetype",
+                "typeName": "Epic"
+            },
+            "10001": {
+                "typeUrl": "https://jira.sso.episerver.net/secure/viewavatar?size=xsmall&avatarId=10315&avatarType=issuetype",
+                "typeName": "Story"
+            }
+        },
+        "epics": {
+            "810928": {
+                "epicField": {
+                    "id": "customfield_10007",
+                    "label": "Epic",
+                    "editable": false,
+                    "renderer": "epiclink",
+                    "epicKey": "STM-1614",
+                    "epicColor": "ghx-label-3",
+                    "text": "Global Header with App Switcher"
+                }
+            },
+            "821144": {
+                "epicField": {
+                    "id": "customfield_10007",
+                    "label": "Epic",
+                    "editable": false,
+                    "renderer": "epiclink",
+                    "epicKey": "STM-1689",
+                    "epicColor": "ghx-label-14",
+                    "text": "Work Request Updates"
+                }
+            },
+            "1128582": {
+                "epicField": {
+                    "id": "customfield_10007",
+                    "label": "Epic",
+                    "editable": false,
+                    "renderer": "epiclink",
+                    "epicKey": "STM-2111",
+                    "epicColor": "ghx-label-11",
+                    "text": "Edit Campaign Templates"
+                }
+            },
+            "1134843": {
+                "epicField": {
+                    "id": "customfield_10007",
+                    "label": "Epic",
+                    "editable": false,
+                    "renderer": "epiclink",
+                    "epicKey": "STM-2147",
+                    "epicColor": "ghx-label-5",
+                    "text": "Delete User Enhancements"
+                }
+            }
+        }
+    },
+    "columnsData": {
+        "rapidViewId": 1229,
+        "columns": [
+            {
+                "id": 8174,
+                "name": "To Do",
+                "statusIds": [
+                    "10011"
+                ]
+            },
+            {
+                "id": 8175,
+                "name": "In Progress",
+                "statusIds": [
+                    "3"
+                ]
+            },
+            {
+                "id": 8176,
+                "name": "Code Review",
+                "statusIds": [
+                    "10005",
+                    "11306"
+                ]
+            },
+            {
+                "id": 8177,
+                "name": "Product/Design Review",
+                "statusIds": [
+                    "11804"
+                ]
+            },
+            {
+                "id": 8178,
+                "name": "Done",
+                "statusIds": [
+                    "10013",
+                    "11802"
+                ]
+            }
+        ]
+    },
+    "swimlanesData": {
+        "rapidViewId": 1229,
+        "swimlaneStrategy": "assigneeUnassignedFirst"
+    },
+    "issuesData": {
+        "rapidViewId": 1229,
+        "activeFilters": [],
+        "issues": [
+            {
+                "id": 1144991,
+                "key": "STM-2229",
+                "hidden": false,
+                "typeId": "3",
+                "summary": "Add UserRole soft Delete in deleteUser()",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "tanvir.islam@episerver.com",
+                "assigneeName": "Tanvir Islam",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?ownerId=JIRAUSER18010&avatarId=17064",
+                "hasCustomUserAvatar": true,
+                "color": "#dd4e68",
+                "epicId": "1134843",
+                "epic": "STM-2147",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 1,
+                        "text": "1"
+                    }
+                },
+                "statusId": "10011",
+                "timeInColumn": {
+                    "enteredStatus": 1703327915943,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": ""
+                    }
+                ]
+            },
+            {
+                "id": 1151992,
+                "key": "STM-2284",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Show deleted users in WR & pitch assignees (FE)",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "anisul.hoque@episerver.com",
+                "assigneeName": "Anisul Hoque",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?avatarId=10920",
+                "hasCustomUserAvatar": true,
+                "color": "#bfe4ff",
+                "epicId": "1134843",
+                "epic": "STM-2147",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 2,
+                        "text": "2"
+                    }
+                },
+                "statusId": "10011",
+                "timeInColumn": {
+                    "enteredStatus": 1705570740620,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": ""
+                    }
+                ]
+            },
+            {
+                "id": 1140542,
+                "key": "STM-2176",
+                "hidden": false,
+                "typeId": "3",
+                "summary": "Export feature for new Users Settings Page",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "anisul.hoque@episerver.com",
+                "assigneeName": "Anisul Hoque",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?avatarId=10920",
+                "hasCustomUserAvatar": true,
+                "color": "#bfe4ff",
+                "epicId": "810928",
+                "epic": "STM-1614",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 3,
+                        "text": "3"
+                    }
+                },
+                "statusId": "10011",
+                "timeInColumn": {
+                    "enteredStatus": 1701587138153,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": ""
+                    }
+                ]
+            },
+            {
+                "id": 1143148,
+                "key": "STM-2216",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Create FF for edit campaign templates",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "tanvir.islam@episerver.com",
+                "assigneeName": "Tanvir Islam",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?ownerId=JIRAUSER18010&avatarId=17064",
+                "hasCustomUserAvatar": true,
+                "color": "#dd4e68",
+                "epicId": "1128582",
+                "epic": "STM-2111",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 1,
+                        "text": "1"
+                    }
+                },
+                "statusId": "3",
+                "timeInColumn": {
+                    "enteredStatus": 1705913431587,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": ""
+                    }
+                ]
+            },
+            {
+                "id": 1128586,
+                "key": "STM-2114",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Edit campaign templates",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "anisul.hoque@episerver.com",
+                "assigneeName": "Anisul Hoque",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?avatarId=10920",
+                "hasCustomUserAvatar": true,
+                "color": "#bfe4ff",
+                "epicId": "1128582",
+                "epic": "STM-2111",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 0,
+                        "text": "0"
+                    }
+                },
+                "statusId": "10011",
+                "timeInColumn": {
+                    "enteredStatus": 1697952459640,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": ""
+                    }
+                ]
+            },
+            {
+                "id": 1132601,
+                "key": "STM-2124",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Allow users with permission in settings page to edit templates (BE)",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "anisul.hoque@episerver.com",
+                "assigneeName": "Anisul Hoque",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?avatarId=10920",
+                "hasCustomUserAvatar": true,
+                "color": "#bfe4ff",
+                "epicId": "1128582",
+                "epic": "STM-2111",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 3,
+                        "text": "3"
+                    }
+                },
+                "statusId": "10011",
+                "timeInColumn": {
+                    "enteredStatus": 1699435655460,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": ""
+                    }
+                ]
+            },
+            {
+                "id": 1143150,
+                "key": "STM-2218",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Allow edit of title, brief, attachment & fields of campaign templates",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "anisul.hoque@episerver.com",
+                "assigneeName": "Anisul Hoque",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?avatarId=10920",
+                "hasCustomUserAvatar": true,
+                "color": "#bfe4ff",
+                "epicId": "1128582",
+                "epic": "STM-2111",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 2,
+                        "text": "2"
+                    }
+                },
+                "statusId": "10011",
+                "timeInColumn": {
+                    "enteredStatus": 1702492163823,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": ""
+                    }
+                ]
+            },
+            {
+                "id": 1143153,
+                "key": "STM-2221",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Allow content add in campaign templates",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "anisul.hoque@episerver.com",
+                "assigneeName": "Anisul Hoque",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?avatarId=10920",
+                "hasCustomUserAvatar": true,
+                "color": "#bfe4ff",
+                "epicId": "1128582",
+                "epic": "STM-2111",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 2,
+                        "text": "2"
+                    }
+                },
+                "statusId": "10011",
+                "timeInColumn": {
+                    "enteredStatus": 1702492264167,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": ""
+                    }
+                ]
+            },
+            {
+                "id": 1132607,
+                "key": "STM-2127",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Share option for editable campaign templates should be uneditable",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "anisul.hoque@episerver.com",
+                "assigneeName": "Anisul Hoque",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?avatarId=10920",
+                "hasCustomUserAvatar": true,
+                "color": "#bfe4ff",
+                "epicId": "1128582",
+                "epic": "STM-2111",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 1,
+                        "text": "1"
+                    }
+                },
+                "statusId": "10011",
+                "timeInColumn": {
+                    "enteredStatus": 1699436333450,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": ""
+                    }
+                ]
+            },
+            {
+                "id": 1143151,
+                "key": "STM-2219",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Start and end dates should not be visible in campaign templates",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "anisul.hoque@episerver.com",
+                "assigneeName": "Anisul Hoque",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?avatarId=10920",
+                "hasCustomUserAvatar": true,
+                "color": "#bfe4ff",
+                "epicId": "1128582",
+                "epic": "STM-2111",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 2,
+                        "text": "2"
+                    }
+                },
+                "statusId": "10011",
+                "timeInColumn": {
+                    "enteredStatus": 1702492192227,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": ""
+                    }
+                ]
+            },
+            {
+                "id": 1143154,
+                "key": "STM-2222",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Keep all other features non editable / hidden in campaign templates",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "anisul.hoque@episerver.com",
+                "assigneeName": "Anisul Hoque",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?avatarId=10920",
+                "hasCustomUserAvatar": true,
+                "color": "#bfe4ff",
+                "epicId": "1128582",
+                "epic": "STM-2111",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 3,
+                        "text": "3"
+                    }
+                },
+                "statusId": "10011",
+                "timeInColumn": {
+                    "enteredStatus": 1702492297940,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": ""
+                    }
+                ]
+            },
+            {
+                "id": 1132853,
+                "key": "STM-2136",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Support adding task/hypothesis in campaign template",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "anisul.hoque@episerver.com",
+                "assigneeName": "Anisul Hoque",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?avatarId=10920",
+                "hasCustomUserAvatar": true,
+                "color": "#bfe4ff",
+                "epicId": "1128582",
+                "epic": "STM-2111",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 2,
+                        "text": "2"
+                    }
+                },
+                "statusId": "10011",
+                "timeInColumn": {
+                    "enteredStatus": 1699515554480,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": ""
+                    }
+                ]
+            },
+            {
+                "id": 1132854,
+                "key": "STM-2137",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Support adding campaign in campaign template",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "anisul.hoque@episerver.com",
+                "assigneeName": "Anisul Hoque",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?avatarId=10920",
+                "hasCustomUserAvatar": true,
+                "color": "#bfe4ff",
+                "epicId": "1128582",
+                "epic": "STM-2111",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 2,
+                        "text": "2"
+                    }
+                },
+                "statusId": "10011",
+                "timeInColumn": {
+                    "enteredStatus": 1699515562877,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": ""
+                    }
+                ]
+            },
+            {
+                "id": 1132855,
+                "key": "STM-2138",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Support adding event in campaign template",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "anisul.hoque@episerver.com",
+                "assigneeName": "Anisul Hoque",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?avatarId=10920",
+                "hasCustomUserAvatar": true,
+                "color": "#bfe4ff",
+                "epicId": "1128582",
+                "epic": "STM-2111",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 2,
+                        "text": "2"
+                    }
+                },
+                "statusId": "10011",
+                "timeInColumn": {
+                    "enteredStatus": 1699515574770,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": ""
+                    }
+                ]
+            },
+            {
+                "id": 1132605,
+                "key": "STM-2126",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Support adding milestone in campaign template",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "anisul.hoque@episerver.com",
+                "assigneeName": "Anisul Hoque",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?avatarId=10920",
+                "hasCustomUserAvatar": true,
+                "color": "#bfe4ff",
+                "epicId": "1128582",
+                "epic": "STM-2111",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 2,
+                        "text": "2"
+                    }
+                },
+                "statusId": "10011",
+                "timeInColumn": {
+                    "enteredStatus": 1699436126380,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": ""
+                    }
+                ]
+            },
+            {
+                "id": 1151981,
+                "key": "STM-2283",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Unblock add activities from UI for template campaigns",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "anisul.hoque@episerver.com",
+                "assigneeName": "Anisul Hoque",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?avatarId=10920",
+                "hasCustomUserAvatar": true,
+                "color": "#bfe4ff",
+                "epicId": "1128582",
+                "epic": "STM-2111",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 2,
+                        "text": "2"
+                    }
+                },
+                "statusId": "10011",
+                "timeInColumn": {
+                    "enteredStatus": 1705569442220,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": ""
+                    }
+                ]
+            },
+            {
+                "id": 1149247,
+                "key": "STM-2255",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Create script for unlinking deleted campaign, event, pitch requests from LinkedResources Table",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "mehedi.hassan@episerver.com",
+                "assigneeName": "Mehedi Hassan",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?ownerId=JIRAUSER17810&avatarId=17916",
+                "hasCustomUserAvatar": true,
+                "color": "#ff9933",
+                "epicId": "821144",
+                "epic": "STM-1689",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 3,
+                        "text": "3"
+                    }
+                },
+                "statusId": "3",
+                "timeInColumn": {
+                    "enteredStatus": 1705228409650,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": ""
+                    }
+                ]
+            },
+            {
+                "id": 1143233,
+                "key": "STM-2224",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Update WR & pitch request watchers",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "refaya.karim@episerver.com",
+                "assigneeName": "Refaya Karim",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?ownerId=JIRAUSER17116&avatarId=17097",
+                "hasCustomUserAvatar": true,
+                "color": "#990080",
+                "epicId": "1134843",
+                "epic": "STM-2147",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 2,
+                        "text": "2"
+                    }
+                },
+                "statusId": "11804",
+                "timeInColumn": {
+                    "enteredStatus": 1705861610320,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": "<div class=\"shorten\" id=\"customfield_13301-field\">\n                        Musavvir Khan,                                 Tanvir Islam            </div>"
+                    }
+                ]
+            },
+            {
+                "id": 1147245,
+                "key": "STM-2251",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Remove unique org-role-user constraint from deleted user roles",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "refaya.karim@episerver.com",
+                "assigneeName": "Refaya Karim",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?ownerId=JIRAUSER17116&avatarId=17097",
+                "hasCustomUserAvatar": true,
+                "color": "#990080",
+                "epicId": "1134843",
+                "epic": "STM-2147",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 3,
+                        "text": "3"
+                    }
+                },
+                "statusId": "11306",
+                "timeInColumn": {
+                    "enteredStatus": 1705345421307,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": "<div class=\"shorten\" id=\"customfield_13301-field\">\n                        Mehedi Hassan            </div>"
+                    }
+                ]
+            },
+            {
+                "id": 1143145,
+                "key": "STM-2214",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Update pitch request requested by & submitted by UI in pitch list view",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "shohidul.bari@episerver.com",
+                "assigneeName": "Shohidul Bari",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?ownerId=JIRAUSER18005&avatarId=17062",
+                "hasCustomUserAvatar": true,
+                "color": "#b66d38",
+                "epicId": "1134843",
+                "epic": "STM-2147",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 3,
+                        "text": "3"
+                    }
+                },
+                "statusId": "3",
+                "timeInColumn": {
+                    "enteredStatus": 1705386951577,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": ""
+                    }
+                ]
+            },
+            {
+                "id": 1142199,
+                "key": "STM-2202",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Object[task, campaign, events] history (FE)",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "tanvir.islam@episerver.com",
+                "assigneeName": "Tanvir Islam",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?ownerId=JIRAUSER18010&avatarId=17064",
+                "hasCustomUserAvatar": true,
+                "color": "#dd4e68",
+                "epicId": "1134843",
+                "epic": "STM-2147",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 5,
+                        "text": "5"
+                    }
+                },
+                "statusId": "11802",
+                "timeInColumn": {
+                    "enteredStatus": 1705917290077,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": "<div class=\"shorten\" id=\"customfield_13301-field\">\n                        Musavvir Khan            </div>"
+                    }
+                ]
+            },
+            {
+                "id": 1140983,
+                "key": "STM-2194",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Notifications page",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "shohidul.bari@episerver.com",
+                "assigneeName": "Shohidul Bari",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?ownerId=JIRAUSER18005&avatarId=17062",
+                "hasCustomUserAvatar": true,
+                "color": "#b66d38",
+                "epicId": "1134843",
+                "epic": "STM-2147",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 3,
+                        "text": "3"
+                    }
+                },
+                "statusId": "11804",
+                "timeInColumn": {
+                    "enteredStatus": 1705560659873,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": "<div class=\"shorten\" id=\"customfield_13301-field\">\n                        Musavvir Khan            </div>"
+                    }
+                ]
+            },
+            {
+                "id": 1141419,
+                "key": "STM-2198",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Update pitch request comments",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "refaya.karim@episerver.com",
+                "assigneeName": "Refaya Karim",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?ownerId=JIRAUSER17116&avatarId=17097",
+                "hasCustomUserAvatar": true,
+                "color": "#990080",
+                "epicId": "1134843",
+                "epic": "STM-2147",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 1,
+                        "text": "1"
+                    }
+                },
+                "statusId": "11804",
+                "timeInColumn": {
+                    "enteredStatus": 1705563731777,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": ""
+                    }
+                ]
+            },
+            {
+                "id": 1140960,
+                "key": "STM-2185",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Task page comment",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "refaya.karim@episerver.com",
+                "assigneeName": "Refaya Karim",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?ownerId=JIRAUSER17116&avatarId=17097",
+                "hasCustomUserAvatar": true,
+                "color": "#990080",
+                "epicId": "1134843",
+                "epic": "STM-2147",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 2,
+                        "text": "2"
+                    }
+                },
+                "statusId": "11804",
+                "timeInColumn": {
+                    "enteredStatus": 1705560600050,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": "<div class=\"shorten\" id=\"customfield_13301-field\">\n                        Shohidul Bari            </div>"
+                    }
+                ]
+            },
+            {
+                "id": 1143143,
+                "key": "STM-2213",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Update pitch request created by UI",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "abde.khan@episerver.com",
+                "assigneeName": "Musavvir Khan",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?ownerId=JIRAUSER17137&avatarId=17067",
+                "hasCustomUserAvatar": true,
+                "color": "#bfe4ff",
+                "epicId": "1134843",
+                "epic": "STM-2147",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 3,
+                        "text": "3"
+                    }
+                },
+                "statusId": "11804",
+                "timeInColumn": {
+                    "enteredStatus": 1705851844927,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": "<div class=\"shorten\" id=\"customfield_13301-field\">\n                        Shohidul Bari            </div>"
+                    }
+                ]
+            },
+            {
+                "id": 1143146,
+                "key": "STM-2215",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Update pitch and pitch request attachment uploaded by UI",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "abde.khan@episerver.com",
+                "assigneeName": "Musavvir Khan",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?ownerId=JIRAUSER17137&avatarId=17067",
+                "hasCustomUserAvatar": true,
+                "color": "#bfe4ff",
+                "epicId": "1134843",
+                "epic": "STM-2147",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 2,
+                        "text": "2"
+                    }
+                },
+                "statusId": "11804",
+                "timeInColumn": {
+                    "enteredStatus": 1705904448227,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": "<div class=\"shorten\" id=\"customfield_13301-field\">\n                        Shohidul Bari            </div>"
+                    }
+                ]
+            },
+            {
+                "id": 1151248,
+                "key": "STM-2262",
+                "hidden": false,
+                "typeId": "10001",
+                "summary": "Write script for updating resource_type for hypothesis",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "abde.khan@episerver.com",
+                "assigneeName": "Musavvir Khan",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?ownerId=JIRAUSER17137&avatarId=17067",
+                "hasCustomUserAvatar": true,
+                "color": "#bfe4ff",
+                "epicId": "821144",
+                "epic": "STM-1689",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 3,
+                        "text": "3"
+                    }
+                },
+                "statusId": "11804",
+                "timeInColumn": {
+                    "enteredStatus": 1705911286807,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": "<div class=\"shorten\" id=\"customfield_13301-field\">\n                        Mehedi Hassan,                                 Tanvir Islam            </div>"
+                    }
+                ]
+            },
+            {
+                "id": 1134843,
+                "key": "STM-2147",
+                "hidden": false,
+                "typeId": "10000",
+                "summary": "Delete user enhancements",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "anisul.hoque@episerver.com",
+                "assigneeName": "Anisul Hoque",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?avatarId=10920",
+                "hasCustomUserAvatar": true,
+                "color": "#bfe4ff",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 0,
+                        "text": "0"
+                    }
+                },
+                "statusId": "10011",
+                "timeInColumn": {
+                    "enteredStatus": 1700038668103,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": ""
+                    }
+                ]
+            },
+            {
+                "id": 1150540,
+                "key": "STM-2258",
+                "hidden": false,
+                "typeId": "1",
+                "summary": "Add a migration script to set resource_type as nullable false",
+                "priorityId": "10600",
+                "done": false,
+                "assignee": "shohidul.bari@episerver.com",
+                "assigneeName": "Shohidul Bari",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?ownerId=JIRAUSER18005&avatarId=17062",
+                "hasCustomUserAvatar": true,
+                "color": "#b66d38",
+                "epicId": "821144",
+                "epic": "STM-1689",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {
+                        "value": 1,
+                        "text": "1"
+                    }
+                },
+                "statusId": "11306",
+                "timeInColumn": {
+                    "enteredStatus": 1705508859903,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": "<div class=\"shorten\" id=\"customfield_13301-field\">\n                        Tanvir Islam            </div>"
+                    }
+                ]
+            },
+            {
+                "id": 1150900,
+                "key": "STM-2285",
+                "hidden": false,
+                "typeId": "1",
+                "summary": "Chewy - Unable to see lineage of a Hypothesis created from a Work Request",
+                "priorityId": "10603",
+                "done": false,
+                "assignee": "tanvir.islam@episerver.com",
+                "assigneeName": "Tanvir Islam",
+                "avatarUrl": "https://jira.sso.episerver.net/secure/useravatar?ownerId=JIRAUSER18010&avatarId=17064",
+                "hasCustomUserAvatar": true,
+                "color": "#dd4e68",
+                "estimateStatisticRequired": false,
+                "estimateStatistic": {
+                    "statFieldId": "customfield_10002",
+                    "statFieldValue": {}
+                },
+                "statusId": "10013",
+                "timeInColumn": {
+                    "enteredStatus": 1705914462940,
+                    "durationPreviously": 0
+                },
+                "fixVersions": [],
+                "projectId": 14117,
+                "extraFields": [
+                    {
+                        "id": "customfield_13301",
+                        "label": "Code Reviewers",
+                        "editable": false,
+                        "renderer": "html",
+                        "html": ""
+                    }
+                ]
+            }
+        ],
+        "projects": [
+            {
+                "id": 14117
+            }
+        ],
+        "missingParents": [],
+        "canRelease": false,
+        "hasBulkChangePermission": true,
+        "issueArchivingEnabled": false
+    },
+    "orderData": {
+        "rapidViewId": 1229,
+        "rankable": true,
+        "rankCustomFieldId": 10010,
+        "canRankPerProject": [
+            {
+                "projectId": 14117,
+                "projectKey": "STM",
+                "canRank": true
+            }
+        ]
+    },
+    "sprintsData": {
+        "rapidViewId": 1229,
+        "sprints": [
+            {
+                "id": 9292,
+                "sequence": 8991,
+                "rapidViewId": 1229,
+                "name": "24Q1 S2 [Bali]",
+                "state": "ACTIVE",
+                "goal": "- Complete Delete User\n- Start Work On Edit Campaign Template\n- Other Bugs",
+                "autoStartStop": false,
+                "synced": false,
+                "startDate": "21/Jan/24 06:49",
+                "endDate": "04/Feb/24 06:49",
+                "activatedDate": "22/Jan/24 06:53",
+                "completeDate": "",
+                "canUpdateSprint": true,
+                "canStartStopSprint": true,
+                "canUpdateDates": true,
+                "remoteLinks": [],
+                "daysRemaining": 8
+            }
+        ],
+        "canManageSprints": true
+    },
+    "etagData": {
+        "rapidViewId": 1229,
+        "issueCount": 30,
+        "lastUpdated": 1705917290073,
+        "quickFilters": "[]",
+        "sprints": "[]",
+        "etag": "1229,1705917290073,[],[],false,30",
+        "emptyFilterBoard": false
+    },
+    "epicData": {
+        "epicsCount": 48
+    },
+    "emptyFilterBoard": false,
+    "cardColorStrategy": "assignee"
+}
