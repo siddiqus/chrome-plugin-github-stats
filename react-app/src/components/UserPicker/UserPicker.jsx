@@ -1,4 +1,4 @@
-import { Form, Row, Button } from "react-bootstrap";
+import { Form, Row, Button, Alert, Col } from "react-bootstrap";
 import "./UserPicker.css";
 import { useState } from "react";
 import ReactDatePicker from "react-datepicker";
@@ -10,6 +10,8 @@ function UserPicker({ onSubmit }) {
   const [endDate, setEndDate] = useState(null);
 
   const [isLoading, setIsLoading] = useState(false);
+
+  const [errorMessage, setErrorMessage] = useState("");
 
   function handleKeyDown(e) {
     if (e.key !== "Enter") return;
@@ -39,6 +41,12 @@ function UserPicker({ onSubmit }) {
   }
 
   async function handleSubmit() {
+    setErrorMessage("");
+
+    if (!startDate || !endDate || !usernames.length) {
+      setErrorMessage("StartDate, End Date and Usernames required");
+      return;
+    }
     const startDateFormatted = formatDate(startDate);
     const endDateFormatted = formatDate(endDate);
 
@@ -106,6 +114,15 @@ function UserPicker({ onSubmit }) {
               Calculate Stats
             </Button>
           </div>
+        </Row>
+        <Row style={{ marginTop: "1em" }}>
+          <Col>
+            {errorMessage ? (
+              <Alert variant="danger">{errorMessage}</Alert>
+            ) : (
+              <></>
+            )}
+          </Col>
         </Row>
       </Form>
     </div>

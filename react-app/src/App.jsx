@@ -18,6 +18,7 @@ function App() {
 
   const [months, setMonths] = useState([]);
   const [userDataList, setUserDataList] = useState([]);
+  const [errorMessage, setErrorMessage] = useState("");
 
   async function onSubmit({ startDate, endDate, usernames }) {
     const months = getMonthsBetween(
@@ -28,21 +29,27 @@ function App() {
 
     setDataStatus(statusMap.LOADING);
 
-    const data = await Promise.all(
-      usernames.map((u) =>
-        getUserData({
-          author: u,
-          startDate,
-          endDate,
-        })
-      )
-    );
-    setUserDataList(data);
-    setDataStatus(statusMap.LOADED);
+    try {
+      const data = await Promise.all(
+        usernames.map((u) =>
+          getUserData({
+            author: u,
+            startDate,
+            endDate,
+          })
+        )
+      );
+      setUserDataList(data);
+      setDataStatus(statusMap.LOADED);
+    } catch (error) {
+      setErrorMessage(error.message);
+      setDataStatus(statusMap.ERROR);
+    }
   }
 
   const isLoaded = dataStatus === statusMap.LOADED;
   const isLoading = dataStatus === statusMap.LOADING;
+  const isError = dataStatus === statusMap.ERROR;
 
   return (
     <Container>
@@ -52,7 +59,8 @@ function App() {
       <UserPicker onSubmit={onSubmit} />
       <hr />
 
-      <h4>{isLoading ? "Loading..." : <></>}</h4>
+      {isLoading ? <h4>Loading...</h4> : <></>}
+      {isError ? <h4 style={{ color: "red" }}> {errorMessage}</h4> : <></>}
 
       {isLoaded ? (
         <UserPrChart months={months} userDataList={userDataList}></UserPrChart>
