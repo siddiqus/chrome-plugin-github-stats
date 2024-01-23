@@ -112,6 +112,7 @@ function getMonthlyStats(data) {
   const issuesByMonth = {};
 
   let totalPrCounts = 0;
+  let totalComments = 0;
 
   data.forEach((pr) => {
     const {
@@ -135,11 +136,12 @@ function getMonthlyStats(data) {
     }
 
     totalPrCounts++;
+    totalComments += num_comments;
   });
 
   const issueStatsByMonth = {};
 
-  Object.keys(issuesByMonth).forEach((month) => {
+  for (const month of Object.keys(issuesByMonth)) {
     const prs = issuesByMonth[month];
 
     const prCount = prs.length;
@@ -147,12 +149,14 @@ function getMonthlyStats(data) {
     const prsWithComments = prs.filter((pr) => pr.num_comments > 0);
 
     // bot comment counts, so deduct 1
-    const averageNumberOfComments = Math.round(
-      prsWithComments.reduce(
-        (sum, pr) => sum + Math.max(0, pr.num_comments - 1),
-        0
-      ) / prsWithComments.length
+    const totalComments = prsWithComments.reduce(
+      (sum, pr) => sum + Math.max(0, pr.num_comments - 1),
+      0
     );
+    const averageNumberOfComments = Math.round(
+      totalComments / prsWithComments.length
+    );
+    console.log(totalComments, averageNumberOfComments);
     const maxNumberOfComments = Math.max(
       ...prsWithComments.map((pr) => pr.num_comments)
     );
@@ -163,7 +167,7 @@ function getMonthlyStats(data) {
       averageNumberOfComments,
       maxNumberOfComments,
     };
-  });
+  }
 
   let statList = Object.values(issueStatsByMonth);
   statList = sortMonthsAscending(statList);
@@ -172,23 +176,30 @@ function getMonthlyStats(data) {
     totalPrCounts / Object.keys(issuesByMonth).length
   );
 
+  const averageCommentsPerPr = Math.round(totalComments / data.length);
+
   return {
     statList,
     averagePrCountPerMonth,
     totalPrCounts,
+    averageCommentsPerPr,
   };
 }
 
-export async function getStatsForUser({ author, startDate, endDate }) {
+export async function getUserData({ author, startDate, endDate }) {
   const organization = "newscred";
 
   const url = generateGitHubSearchUrl(organization, author, startDate, endDate);
 
   const data = await getAllIssues(url);
 
+  const avatarUrl = data.length ? data[0].author_avatar_url : null;
+
   const monthlyStats = getMonthlyStats(data);
 
   return {
+    username: author,
+    avatarUrl,
     prList: data,
     ...monthlyStats,
   };

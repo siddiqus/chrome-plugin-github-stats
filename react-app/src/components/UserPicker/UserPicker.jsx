@@ -2,11 +2,14 @@ import { Form, Row, Button } from "react-bootstrap";
 import "./UserPicker.css";
 import { useState } from "react";
 import ReactDatePicker from "react-datepicker";
+import { formatDate } from "../../services/utils";
 
-function UserPicker() {
+function UserPicker({ onSubmit }) {
   const [usernames, setUsernames] = useState([]);
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
+
+  const [isLoading, setIsLoading] = useState(false);
 
   function handleKeyDown(e) {
     if (e.key !== "Enter") return;
@@ -35,8 +38,21 @@ function UserPicker() {
     setUsernames([]);
   }
 
+  async function handleSubmit() {
+    const startDateFormatted = formatDate(startDate);
+    const endDateFormatted = formatDate(endDate);
+
+    setIsLoading(true);
+    await onSubmit({
+      startDate: startDateFormatted,
+      endDate: endDateFormatted,
+      usernames,
+    });
+    setIsLoading(false);
+  }
+
   return (
-    <div>
+    <div style={{ opacity: `${isLoading ? 60 : 100}%` }}>
       <div className="tags-input-container">
         {usernames.map((tag, index) => (
           <div className="tag-item" key={index}>
@@ -52,11 +68,16 @@ function UserPicker() {
           type="text"
           className="tags-input"
           placeholder="Type in Github usernames"
+          disabled={isLoading}
         />
-        <Button size="sm" variant="light" onClick={clearUsernames}>
-          {" "}
-          Clear All{" "}
-        </Button>
+        {usernames.length ? (
+          <Button size="sm" variant="light" onClick={clearUsernames}>
+            {" "}
+            Clear All{" "}
+          </Button>
+        ) : (
+          <></>
+        )}
       </div>
 
       <Form style={{ paddingTop: "10px" }}>
@@ -67,6 +88,7 @@ function UserPicker() {
               onChange={(date) => setStartDate(date)}
               dateFormat="yyyy-MM-dd"
               placeholderText="Start Date"
+              disabled={isLoading}
             />
           </div>
 
@@ -76,10 +98,13 @@ function UserPicker() {
               onChange={(date) => setEndDate(date)}
               dateFormat="yyyy-MM-dd"
               placeholderText="End Date"
+              disabled={isLoading}
             />
           </div>
           <div style={{ flex: 1 }}>
-            <Button>Calculate Stats</Button>
+            <Button disabled={isLoading} onClick={handleSubmit}>
+              Calculate Stats
+            </Button>
           </div>
         </Row>
       </Form>
