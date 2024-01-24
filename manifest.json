@@ -1,14 +1,17 @@
 {
-  "name": "JIRA Sprint Enhancements",
+  "name": "Github Stats",
   "description": "Show stats and other enhancements for JIRA sprint board view",
   "version": "1.0",
   "manifest_version": 3,
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "plugin/src/background.js"
   },
-  "permissions": ["storage", "activeTab", "scripting"],
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
   "action": {
-    "default_popup": "popup.html",
     "default_icon": {
       "16": "/images/get_started16.png",
       "32": "/images/get_started32.png",
@@ -25,8 +28,13 @@
   "options_page": "options.html",
   "content_scripts": [
     {
-      "matches": ["https://jira.sso.episerver.net/*"],
-      "js": ["constants.js", "content-script.js"],
+      "matches": [
+        "https://github.com/*"
+      ],
+      "js": [
+        "plugin/src/utils.js",
+        "plugin/src/content-script.js"
+      ],
       "all_frames": false,
       "match_origin_as_fallback": false,
       "match_about_blank": false
